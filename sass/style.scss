@@ -17,6 +17,12 @@
     align-items: center;
     justify-content: center;
     display: subgrid;
+    button {
+        font-size: 0;
+    };
+    i {
+        font-size: 15px;
+    }
 }
 .msgs p {
     text-align: center;
