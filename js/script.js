@@ -1,3 +1,7 @@
+let computerWin = 0;
+let playerWin = 0;
+
+
 function playGame(playerInput) {
     clearMessages()
     console.log(playerInput);
@@ -27,31 +31,32 @@ function playGame(playerInput) {
             printMessage('Remis!');
         } else if (computerMove == 'kamień' && playerMove == 'papier') {
             printMessage('Wygrałeś!');
-            playerWin = playerWin + 1;
+            playerWin++;
         } else if (computerMove == 'kamień' && playerMove == 'nożyce') {
             printMessage('Przegrałeś!');
-            computerWin = computerWin + 1;
+            computerWin++;
         } else if (computerMove == 'papier' && playerMove == 'papier') {
             printMessage('Remis!');
         } else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
             printMessage('Remis!');
         } else if (computerMove == 'nożyce' && playerMove == 'papier') {
             printMessage('Przegrałeś!');
-            computerWin = computerWin + 1;
+            computerWin++;
         } else if (computerMove == 'nożyce' && playerMove == 'kamień') {
             printMessage('Wygrałeś!');
-            playerWin = playerWin + 1;
+            playerWin++;
         } else if (computerMove == 'papier' && playerMove == 'kamień') {
             printMessage('Przegrałeś!');
-            computerWin = computerWin + 1;
+            computerWin++;
         } else if (computerMove == 'papier' && playerMove == 'nożyce') {
             printMessage('Wygrałeś!');
-            playerWin = playerWin + 1;
+            playerWin++;
         } else if (playerMove == 'error'){
             printMessage('BŁĄD')
         }
     }
     displayResult(computerMove, playerMove)
+    result()
 }
 
 document.getElementById('play-rock').addEventListener('click', function() { playGame(1) })

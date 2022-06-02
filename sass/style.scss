@@ -1,0 +1,36 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+/* GAME-SPLASH */
+.container-sm {
+    background: #ececec;
+    margin-top: 13%;
+    padding: 15px 0;
+}
+.game-header {
+    text-align: center;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: subgrid;
+}
+.msgs p {
+    text-align: center;
+}
+.game-rules {
+    text-align: center;
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+}
+.result {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
