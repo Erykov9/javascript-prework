@@ -39,7 +39,7 @@ function playGame(playerInput) {
             printMessage('Przegrałeś!');
             computerWin = computerWin + 1;
         } else if (computerMove == 'nożyce' && playerMove == 'kamień') {
-            printMessage('Wygrałeś');
+            printMessage('Wygrałeś!');
             playerWin = playerWin + 1;
         } else if (computerMove == 'papier' && playerMove == 'kamień') {
             printMessage('Przegrałeś!');
